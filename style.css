@@ -1,0 +1,449 @@
+/* Heading */
+@import url(https://fonts.google.com/specimen/Poppins);
+/* Body */
+@import url(https://fonts.google.com/specimen/Open+Sans);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container {
+    height: 90%;
+    width: 90%;
+}
+
+.head {
+    height: 10%;
+    width: 100%;
+}
+
+.content {
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    margin-top: 2%;
+}
+
+.left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    width: 100%;
+    height: 95%;
+}
+
+.right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 90%;
+    height: 90%;
+}
+
+.heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 7%;
+    font-size: 160%;
+    color: white;
+}
+
+.para {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin-top: 7%;
+    color: white;
+    opacity: 50%;
+    font-size: 130%;
+    line-height: 140%;
+}
+
+.button {
+    margin-top: 5%;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    border: none;
+    font-size: 110%;
+    border-radius: 50px;
+    width: 40%;
+    height: 55px;
+    color: hsl(228, 45%, 44%);
+    background-color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    box-shadow: 10px 10px 20px #1f1f1f;
+}
+
+.foot {
+    height: 10%;
+    width: 100%;
+}
+
+.icon1 {
+    margin-top: 1%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2%;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-size: 140%;
+    transition: all 0.4s;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding-top: 10px;
+}
+
+
+.icon:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+@media screen and (width<=526px) {
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 375px;
+        height: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .container {
+        height: 90%;
+        width: 90%;
+    }
+
+    .head {
+        height: 10%;
+        width: 100%;
+    }
+
+    .head img {
+        width: 40%;
+        height: 50%;
+    }
+
+    .content {
+        height: 80%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        margin-top: 10%;
+    }
+
+    .left {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .left img {
+        width: 100%;
+        height: 95%;
+    }
+
+    .right {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        width: 90%;
+        height: 90%;
+    }
+
+    .heading {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        margin-top: 7%;
+        font-size: 80%;
+        text-align: center;
+        color: white;
+    }
+
+    .para {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        margin-top: 7%;
+        color: white;
+        opacity: 50%;
+        font-size: 100%;
+        text-align: center;
+        line-height: 140%;
+    }
+
+    .button {
+        margin-top: 15%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        font-family: "Poppins", sans-serif;
+        font-weight: lighter;
+        border: none;
+        font-size: 110%;
+        border-radius: 50px;
+        width: 80%;
+        height: 45px;
+        color: hsl(228, 45%, 44%);
+        background-color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: hsl(300, 69%, 71%);
+        color: white;
+        box-shadow: 10px 10px 20px #1f1f1f;
+    }
+
+    .foot {
+        height: 10%;
+        width: 100%;
+    }
+
+    .icon1 {
+        margin-top: 45%;
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        font-size: 140%;
+        transition: all 0.4s;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 50px;
+        padding-top: 10px;
+    }
+
+
+    .icon:hover {
+        color: hsl(300, 69%, 71%);
+        border: 1px solid hsl(300, 69%, 71%);
+    }
+
+
+    .attribution {
+        text-align: center;
+        font-size: 9px;
+    }
+}
+
+@media screen and (width<=375px) {
+
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .container {
+        height: 90%;
+        width: 90%;
+    }
+
+    .head {
+        height: 10%;
+        width: 100%;
+    }
+
+    .head img {
+        width: 40%;
+        height: 50%;
+    }
+
+    .content {
+        height: 80%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        margin-top: 10%;
+    }
+
+    .left {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .left img {
+        width: 100%;
+        height: 95%;
+    }
+
+    .right {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        width: 90%;
+        height: 90%;
+    }
+
+    .heading {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        margin-top: 7%;
+        font-size: 80%;
+        text-align: center;
+        color: white;
+    }
+
+    .para {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        margin-top: 7%;
+        color: white;
+        opacity: 50%;
+        font-size: 100%;
+        text-align: center;
+        line-height: 140%;
+    }
+
+    .button {
+        margin-top: 15%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        font-family: "Poppins", sans-serif;
+        font-weight: lighter;
+        border: none;
+        font-size: 110%;
+        border-radius: 50px;
+        width: 80%;
+        height: 45px;
+        color: hsl(228, 45%, 44%);
+        background-color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: hsl(300, 69%, 71%);
+        color: white;
+        box-shadow: 10px 10px 20px #1f1f1f;
+    }
+
+    .foot {
+        height: 10%;
+        width: 100%;
+    }
+
+    .icon1 {
+        margin-top: 45%;
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        font-size: 140%;
+        transition: all 0.4s;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 50px;
+        padding-top: 10px;
+    }
+
+
+    .icon:hover {
+        color: hsl(300, 69%, 71%);
+        border: 1px solid hsl(300, 69%, 71%);
+    }
+
+    .attribution {
+        text-align: center;
+        font-size: 4px;
+    }
+
+}
