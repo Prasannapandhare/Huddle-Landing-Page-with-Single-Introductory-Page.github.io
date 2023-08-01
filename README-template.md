@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live Server URL](https://your-live-site-url.com)
+- Live Site URL: [Live Server URL](https://prasannapandhare.github.io/Huddle-Landing-Page-with-Single-Introductory-Page.github.io/)
 
 ## My process
 
